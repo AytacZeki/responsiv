@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap');
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+@media (max-width: 830px) {
+    .page {
+        margin-left: 0px;
+    }
+    .img-two #img,
+    .img-two .img-shadow {
+        display: none;
+    }
+    .content {
+        width: 80%;
+    }
+    .page .img {
+        width: 20%;
+    }
+    .page .img .img-index img {
+        width: 200px;
+        margin-left: 70px;
+        margin-bottom: -35px;
+    }
+    .page .img .img-index .img-shadow {
+        width: 262px;
+        height: 35px;
+    }
+    .info .cards {
+        margin-left: -50px;
+    }
+}
+
+@media (max-width: 375px) {
+    .page {
+        margin: 0px;
+        padding: 0px;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .img-index {
+        width: 100%;
+        padding: 50%;
+    }
+    .content .text {
+        width: 360px;
+        font-size: 12px;
+        line-height: 100px;
+        padding-right: 0;
+    }
+    .cards {
+        flex-wrap: wrap;
+    }
+    .card-text {
+        margin-top: 3px;
+    }
+}
+
+.page {
+    height: 1046px;
+    max-width: 1440px;
+    border-radius: 0;
+    padding: 10% 5%;
+}
+
+.page h1 {
+    height: 93px;
+    width: 365px;
+}
+
+.content {
+    display: flex;
+    margin-bottom: 15%;
+    width: 80%;
+}
+
+.content .text {
+    height: 374px;
+    width: 80%;
+    margin-right: 0%;
+}
+
+.img {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.img .img-index {
+    z-index: 3;
+}
+
+.img img {
+    padding-top: 0px;
+    height: 300px;
+    width: 500px;
+    margin-right: -85px;
+}
+
+.img .img-shadow {
+    margin-top: -30px;
+    margin-left: 50%;
+    height: 59px;
+    width: 360px;
+    background: #EFEFEF;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.info {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.info .img-two {
+    display: flex;
+    flex-direction: column;
+}
+
+.info .img-two #img {
+    z-index: 3;
+}
+
+.info .img-shadow {
+    height: 32px;
+    width: 189px;
+    background: #EFEFEF;
+    border-radius: 50%;
+    margin-left: 25px;
+    margin-top: -20px;
+    z-index: 2;
+}
+
+.info img {
+    height: 203px;
+    width: 232px;
+}
+
+.info .card-text {
+    width: 150px;
+    height: 78px;
+    margin: 0 50px 40px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card-text .card-title {
+    height: 39px;
+    width: 150px;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom: 0;
+}
+
+.card-text .card-content {
+    height: 39px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+}
